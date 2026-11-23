@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+
+<html class="h-full" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "primary-container": "#2a2121", "tertiary-fixed-dim": "#bbcbb8", "on-surface-variant": "#4e4544", "on-primary-fixed": "#221919", "background": "#fcf9f4", "on-secondary": "#ffffff", "on-secondary-fixed": "#31120e", "on-tertiary": "#ffffff", "on-background": "#1c1c19", "surface-variant": "#e5e2dd", "error-container": "#ffdad6", "on-secondary-fixed-variant": "#643c37", "surface-container-low": "#f6f3ee", "on-primary-container": "#958787", "on-tertiary-fixed-variant": "#3c4a3c", "secondary-fixed": "#ffdad5", "primary": "#130c0c", "secondary": "#7f534d", "surface-container-high": "#ebe8e3", "surface-container-lowest": "#ffffff", "inverse-on-surface": "#f3f0eb", "outline-variant": "#d1c3c3", "inverse-primary": "#d3c3c2", "on-tertiary-fixed": "#111f12", "primary-fixed-dim": "#d3c3c2", "secondary-fixed-dim": "#f1b9b1", "surface-bright": "#fcf9f4", "tertiary-fixed": "#d6e7d3", "surface-tint": "#675c5b", "on-surface": "#1c1c19", "surface-container-highest": "#e5e2dd", "tertiary": "#041005", "primary-fixed": "#efdfde", "surface-dim": "#dcdad5", "surface": "#fcf9f4", "error": "#ba1a1a", "on-error-container": "#93000a", "tertiary-container": "#192619", "on-error": "#ffffff", "surface-container": "#f0ede9", "inverse-surface": "#31302d", "outline": "#807474", "on-primary-fixed-variant": "#4f4444", "secondary-container": "#fdc4bc", "on-secondary-container": "#794f49", "on-primary": "#ffffff", "on-tertiary-container": "#7f8e7d" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "gutter-mobile": "1rem", "space-xl": "2.5rem", "space-md": "1rem", "space-xs": "0.25rem", "space-sm": "0.5rem", "margin": "3rem", "gutter": "1.5rem", "space-lg": "1.5rem", "margin-mobile": "1.25rem" }, fontFamily: { "label-lg": ["Plus Jakarta Sans"], "display-lg-mobile": ["Playfair Display"], "headline-sm": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "headline-md": ["Playfair Display"], "display-lg": ["Playfair Display"], "display-md-mobile": ["Playfair Display"], "body-md": ["Plus Jakarta Sans"], "display-md": ["Playfair Display"], "label-md": ["Plus Jakarta Sans"], "headline-lg": ["Playfair Display"], "body-sm": ["Plus Jakarta Sans"] }, fontSize: { "label-lg": ["14px", { lineHeight: "20px", letterSpacing: "0.04em", fontWeight: "600" }], "display-lg-mobile": ["36px", { lineHeight: "44px", letterSpacing: "-0.01em", fontWeight: "400" }], "headline-sm": ["20px", { lineHeight: "28px", letterSpacing: "-0.01em", fontWeight: "600" }], "body-lg": ["18px", { lineHeight: "28px", letterSpacing: "0em", fontWeight: "400" }], "label-sm": ["11px", { lineHeight: "14px", letterSpacing: "0.08em", fontWeight: "500" }], "headline-md": ["24px", { lineHeight: "32px", letterSpacing: "0em", fontWeight: "500" }], "display-lg": ["56px", { lineHeight: "64px", letterSpacing: "-0.02em", fontWeight: "400" }], "display-md-mobile": ["28px", { lineHeight: "36px", letterSpacing: "0em", fontWeight: "400" }], "body-md": ["15px", { lineHeight: "24px", letterSpacing: "0.01em", fontWeight: "400" }], "display-md": ["40px", { lineHeight: "48px", letterSpacing: "-0.01em", fontWeight: "400" }], "label-md": ["12px", { lineHeight: "16px", letterSpacing: "0.06em", fontWeight: "600" }], "headline-lg": ["32px", { lineHeight: "40px", letterSpacing: "-0.01em", fontWeight: "500" }], "body-sm": ["13px", { lineHeight: "20px", letterSpacing: "0.01em", fontWeight: "400" }] } } } }</script><style>@layer base{html,body{width:100%;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}.material-symbols-outlined{font-variation-settings:'FILL' 0,'wght' 300,'GRAD' 0,'opsz' 24;}body{animation:fadeIn 0.3s ease-in-out;}@keyframes fadeIn{from{opacity:0;transform:translateY(4px);}to{opacity:1;transform:translateY(0);}}</style><script type="module" src="../firebase-config.js"></script></head><body class="bg-surface text-on-surface font-body-md text-body-md min-h-screen flex flex-col selection:bg-secondary-container selection:text-on-secondary-container"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/85 backdrop-blur-xl shadow-[0_1px_12px_rgba(42,33,33,0.04)]"><div class="h-16 px-gutter-mobile flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0"><img alt="HAYA Studio Logo" class="h-8 w-auto object-contain shrink-0" src="https://lh3.googleusercontent.com/aida/ALJJyrCRSdmrlB-b17fDdObcvlYBrMXfy-4v7yyNIj2h0cUGspQuN7fchU2hJfOKRDA25LmElQc5048m8tCQYPCJXVc03fQ3EmPVuAMSSJwniHxyKnBabShdKvsJipRi73Yj40UJ0yoWYgnBS-dCI8UInjEM5iJCge4SLNIrxwKcisZZG__9U4v8gmNAT1Qqc1_dELz-Xry7oikH4rOqLQ2Ih8lVthWoXuWiJCz3gSsk7res"/><div class="flex flex-col min-w-0"><span class="font-headline-md text-body-md font-medium text-primary tracking-tight truncate">HAYA Studio</span><span class="font-label-sm text-label-sm text-on-surface-variant truncate uppercase tracking-widest">Complete The Look</span></div></div><div class="flex items-center gap-space-xs shrink-0"><button aria-label="Switch Language" class="min-h-[44px] px-space-xs flex items-center justify-center font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors" type="button"><span class="font-semibold text-primary">EN</span><span class="mx-1 text-outline-variant font-light">|</span><span class="text-on-surface-variant">العربية</span></button><button aria-label="Search" class="w-11 h-11 min-w-[44px] min-h-[44px] flex items-center justify-center text-primary rounded-full hover:bg-surface-container-high/60 transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">search</span></button><button aria-label="Wishlist" class="relative w-11 h-11 min-w-[44px] min-h-[44px] flex items-center justify-center text-primary rounded-full hover:bg-surface-container-high/60 transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">favorite</span><span class="absolute top-2.5 right-2.5 w-2 h-2 rounded-full bg-secondary ring-2 ring-surface"></span></button><button aria-label="Shopping Bag" class="relative w-11 h-11 min-w-[44px] min-h-[44px] flex items-center justify-center text-primary rounded-full hover:bg-surface-container-high/60 transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">shopping_bag</span><span class="absolute top-2 right-2 px-1 min-w-[16px] h-4 rounded-full bg-primary text-on-primary font-label-sm text-[10px] leading-none flex items-center justify-center font-medium shadow-sm">2</span></button><div class="pl-space-xs ml-space-xs flex items-center shrink-0"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-outline-variant/30" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAuxnOIxsMQfmep3Q0RWwKoW9oazgT9C6wQB-4GiGI6YzN97TpWK1Q-5CfghE2jcFAk5R7DFfeJ1fjsXy8_4R1czNcXBbGc_x1blxCPnGVd5L2jgQ_W2GcMLDzxvg57WTMadfsA3DVvKjYajssz15nch7jFncvlhQxbh6yPEzY6PpwlK9rAZJ6cOHnQOGZpAXa1Y6ukrSV_hzct6DNfmidxNA9CAMCLmpGgO3wynX-j"/></div></div></div></header><main class="flex flex-col relative w-full pt-16 pb-24 bg-surface min-h-screen"><div class="flex flex-col w-full pb-28">
+<!-- Editorial Studio Header -->
+<section class="px-gutter-mobile pt-space-md pb-space-sm flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="inline-flex w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant">Interactive Atelier</span>
+</div>
+<button class="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container-high text-on-surface hover:bg-secondary-container transition-colors" id="stylist-toggle-btn" type="button">
+<span class="material-symbols-outlined text-[16px] text-secondary">magic_button</span>
+<span class="font-label-sm text-label-sm font-semibold">Stylist Advice / نصيحة</span>
+</button>
+</div>
+<h1 class="font-display-md-mobile text-display-md-mobile text-primary tracking-tight mt-1">The Styling Studio</h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-sm">
+      Harmonize your silhouette with breathable drape fabrics, zero-sheer undertones, and snag-free magnetic jewelry.
+    </p>
+<!-- Stylist Note Drawer (Collapsible Hint) -->
+<div class="hidden mt-space-xs p-space-md rounded-xl bg-secondary-container/40 text-on-secondary-container transition-all" id="stylist-advice-drawer">
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-[20px] text-secondary shrink-0 mt-0.5">spa</span>
+<div class="flex flex-col gap-1 min-w-0">
+<span class="font-label-md text-label-md font-bold text-primary">Stylist Note: "Warm Dune Palette"</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Sand Dune linen abayas contain warm golden undertones. We recommend contrasting with our breathable Dusty Rose Silk Chiffon for an ethereal sunset aesthetic, anchored by snag-free Champagne Gold magnets.
+          </p>
+<span class="font-label-sm text-label-sm text-secondary font-medium mt-1">نصيحة: مزيج درجات الرمل مع الوردي الخافت يمنحكِ إطلالة ناعمة وفاخرة.</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Hero Piece: The Canvas -->
+<section class="px-gutter-mobile mt-space-sm">
+<div class="rounded-2xl bg-surface-container-low p-space-md flex flex-col gap-space-md shadow-sm relative overflow-hidden">
+<!-- Opacity & Modesty Assurance Badge -->
+<div class="flex items-center justify-between z-10">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface text-on-surface font-label-sm text-label-sm shadow-sm">
+<span class="material-symbols-outlined text-[14px] text-secondary">verified</span>
+          100% Opaque • Zero Sheer
+        </span>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">straighten</span> Custom Hem Ready
+        </span>
+</div>
+<!-- Main Garment Silhouette Showcase -->
+<div class="relative w-full aspect-[4/5] rounded-xl overflow-hidden bg-surface-container">
+<img alt="The Solstice Linen Trench Abaya in Sand Dune" class="w-full h-full object-cover object-top" data-alt="Editorial modest fashion photography of a poised young hijabi woman wearing the elegant Solstice Linen Trench Abaya in Sand Dune with relaxed raglan sleeves, natural drape, and gentle cinematic studio sunlight casting subtle shadows on warm textured alabaster wall." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBEtzeAeHAbTHkOGvNQErc2hJVFDiAC1-1fasugHRJJpJO3yvwjofbQvrXPN40AMCUcT0Tpfx9v6xoSYyjqQee-J-L_vk5LAC94D15uM54ThzG5dVzFxaICGOTHsXv_a2_dwJ86oCRJxToL8IFdHlJ1noa6bGm5CjqkeS576lZ2WlnwKvZz44RvC_uf6Z4hkn5jxlIzBXUBPq-tpuD3J-Gw9rb7drtGp6osu6bpvR6D"/>
+<!-- Dynamic Fabric Overlay Tag -->
+<div class="absolute bottom-3 left-3 right-3 p-space-sm rounded-xl bg-surface/90 backdrop-blur-md flex items-center justify-between">
+<div class="flex flex-col min-w-0 pr-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Anchor Foundation</span>
+<span class="font-headline-sm text-body-lg text-primary font-semibold truncate">Solstice Linen Trench</span>
+<span class="font-body-sm text-body-sm text-secondary font-medium">Shade: Sand Dune • $148</span>
+</div>
+<div class="w-7 h-7 rounded-full bg-[#D7C4B0] shadow-inner shrink-0" title="Sand Dune Swatch"></div>
+</div>
+</div>
+<!-- Sizing / Custom Fit Micro Selector -->
+<div class="flex items-center justify-between pt-1">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Recommended Silhouette Length</span>
+<span class="font-body-sm text-body-sm font-semibold text-primary">Length 56″ (For 5'4″ – 5'6″)</span>
+</div>
+<button class="px-3 py-1.5 rounded-full bg-surface text-on-surface font-label-md text-label-md shadow-sm hover:bg-surface-container-high transition-colors" type="button">
+          Adjust
+        </button>
+</div>
+</div>
+</section>
+<!-- Hijab Drape Harmonizer Section -->
+<section class="mt-space-lg flex flex-col gap-space-sm">
+<div class="px-gutter-mobile flex items-end justify-between">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-semibold">Tonal Pairing Matrix</span>
+<h2 class="font-headline-md text-headline-md text-primary mt-0.5">Harmonious Hijab Pairings</h2>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Step 1 of 2</span>
+</div>
+<!-- Hijab Material Filter Chips -->
+<div class="flex items-center gap-space-xs px-gutter-mobile overflow-x-auto no-scrollbar py-1">
+<button class="px-3.5 py-1.5 rounded-full bg-primary text-on-primary font-label-md text-label-md shadow-sm shrink-0" type="button">
+        All Textures
+      </button>
+<button class="px-3.5 py-1.5 rounded-full bg-surface-container-high text-on-surface font-label-md text-label-md hover:bg-surface-container-highest shrink-0" type="button">
+        Silk Chiffon
+      </button>
+<button class="px-3.5 py-1.5 rounded-full bg-surface-container-high text-on-surface font-label-md text-label-md hover:bg-surface-container-highest shrink-0" type="button">
+        Bamboo Modal
+      </button>
+<button class="px-3.5 py-1.5 rounded-full bg-surface-container-high text-on-surface font-label-md text-label-md hover:bg-surface-container-highest shrink-0" type="button">
+        Matte Jersey
+      </button>
+<button class="px-3.5 py-1.5 rounded-full bg-surface-container-high text-on-surface font-label-md text-label-md hover:bg-surface-container-highest shrink-0" type="button">
+        Crinkle Crepe
+      </button>
+</div>
+<!-- Tonal Hijab Choice Carousel / Grid -->
+<div class="px-gutter-mobile grid grid-cols-3 gap-space-xs mt-1" id="hijab-options-group">
+<!-- Option 1: Dusty Rose (Pre-selected) -->
+<label class="relative flex flex-col p-2.5 rounded-xl bg-surface-container-lowest shadow-sm cursor-pointer transition-all duration-200">
+<input checked="" class="peer sr-only" data-title="Dusty Rose Silk Chiffon" name="hijab-choice" type="radio" value="34"/>
+<div class="relative w-full aspect-square rounded-lg overflow-hidden bg-surface-container mb-2">
+<img alt="Dusty Rose Silk Chiffon" class="w-full h-full object-cover" data-alt="Macro tactile editorial close up shot of dusty rose pure silk chiffon hijab fabric softly draped with delicate natural woven texture, warm atmospheric lighting, and high-fashion luxury drape." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAwJQWqYCkcTo6b45hKd78qfXWM-C9RAKJVC7OTEw7EMwzEGEBD4VJmklbN9qC7xGfVXfSrM3YDI86wQcTr_TBWttH1gA1iaSb2hoDz2BXP8f6ZdXSTeZ71NOgDJMM2p2UHWLJTycz2UFNFbzuwG6Oo6aPoK-EicNOEo0t0iZcFKoPj-BbruPPKh8URMWbwTHGZFsVWyc1MLV7in0gIYYZ4Zfi1MMSVs7bz0u1FNvfs"/>
+<div class="absolute top-1.5 right-1.5 w-5 h-5 rounded-full bg-primary text-on-primary flex items-center justify-center opacity-0 peer-checked:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-[13px]">check</span>
+</div>
+<span class="absolute bottom-1 left-1 px-1.5 py-0.5 rounded bg-surface/90 text-primary font-label-sm text-[9px] uppercase font-bold tracking-wider">
+            Soft Contrast
+          </span>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-bold line-clamp-1">Dusty Rose</span>
+<span class="font-body-sm text-[12px] text-on-surface-variant">Silk Chiffon</span>
+<span class="font-label-md text-label-md text-secondary font-semibold mt-1">$34</span>
+</label>
+<!-- Option 2: Warm Sand -->
+<label class="relative flex flex-col p-2.5 rounded-xl bg-surface-container-lowest shadow-sm cursor-pointer transition-all duration-200">
+<input class="peer sr-only" data-title="Warm Sand Bamboo Modal" name="hijab-choice" type="radio" value="32"/>
+<div class="relative w-full aspect-square rounded-lg overflow-hidden bg-surface-container mb-2">
+<img alt="Warm Sand Bamboo Modal" class="w-full h-full object-cover" data-alt="Editorial product shot of folded warm sand bamboo modal hijab textile, highlighting butter-soft matte sheen, clean organic drape, neutral warm beige tones with fine weave details." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2cu0PiskUGwtoyHrEZAgw34FZ3C5-vDZr5y8de8YKykPEVLSW03sQ7hO51pL6XCg4nJCTRTQ_5s8iz-TJ5J18ZsvfzRQ3gpfySNvgdKMGLvLQkrHMrRNQqocb8eA-PojHP-UbWws_sUDFua6FhqnUpaKtfswD61zF4gR_v7fyg6SHNM4hydY1Efi7xc6NxD0skRcNIy6YCtwrA_2xjzhUfuwihYherNMuNQBbYRmj"/>
+<div class="absolute top-1.5 right-1.5 w-5 h-5 rounded-full bg-primary text-on-primary flex items-center justify-center opacity-0 peer-checked:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-[13px]">check</span>
+</div>
+<span class="absolute bottom-1 left-1 px-1.5 py-0.5 rounded bg-surface/90 text-primary font-label-sm text-[9px] uppercase font-bold tracking-wider">
+            Monochrome
+          </span>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-bold line-clamp-1">Warm Sand</span>
+<span class="font-body-sm text-[12px] text-on-surface-variant">Bamboo Modal</span>
+<span class="font-label-md text-label-md text-secondary font-semibold mt-1">$32</span>
+</label>
+<!-- Option 3: Deep Espresso -->
+<label class="relative flex flex-col p-2.5 rounded-xl bg-surface-container-lowest shadow-sm cursor-pointer transition-all duration-200">
+<input class="peer sr-only" data-title="Deep Espresso Matte Jersey" name="hijab-choice" type="radio" value="28"/>
+<div class="relative w-full aspect-square rounded-lg overflow-hidden bg-surface-container mb-2">
+<img alt="Deep Espresso Matte Jersey" class="w-full h-full object-cover" data-alt="Editorial flatlay of rich deep espresso matte modal jersey hijab cloth draped in gentle sculptural folds, luxurious dark chocolate tones with ultra-soft fluid drape in natural light." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAADrxOjiqQT9-YwEnwdQ8PrFmWqPiLwrMBEGdJb-ICopXEwFRaI7ImD3kHAXFbiMNM7zt0l4n-GosH2QctUoHcvcMaLYyrqbJp2ffqWBdcJQ1VxgQP0-rIy20HRwjeb1_eYdyIf_lS4fD_w1S8W3lgPnSwhODVx0c_muMF7SyUh6S4vX1YZRCB04VA8FHKhj8aml5Bih74UO-vWjF92Fs6juWg7Nn46yb5TKchyt3v"/>
+<div class="absolute top-1.5 right-1.5 w-5 h-5 rounded-full bg-primary text-on-primary flex items-center justify-center opacity-0 peer-checked:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-[13px]">check</span>
+</div>
+<span class="absolute bottom-1 left-1 px-1.5 py-0.5 rounded bg-surface/90 text-primary font-label-sm text-[9px] uppercase font-bold tracking-wider">
+            Bold Contrast
+          </span>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-bold line-clamp-1">Espresso</span>
+<span class="font-body-sm text-[12px] text-on-surface-variant">Matte Jersey</span>
+<span class="font-label-md text-label-md text-secondary font-semibold mt-1">$28</span>
+</label>
+</div>
+</section>
+<!-- Essential Modest Underlayers & Accessories Add-ons -->
+<section class="mt-space-lg px-gutter-mobile flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-semibold">Essential Underpinnings</span>
+<h2 class="font-headline-md text-headline-md text-primary mt-0.5">Modest Fixings &amp; Layers</h2>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Step 2 of 2</span>
+</div>
+<div class="flex flex-col gap-space-xs" id="addon-list">
+<!-- Add-on 1: Bamboo Undercap -->
+<label class="flex items-center gap-space-sm p-space-sm rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors cursor-pointer">
+<input checked="" class="addon-checkbox sr-only peer" type="checkbox" value="16"/>
+<div class="w-5 h-5 rounded-md bg-surface flex items-center justify-center text-primary peer-checked:bg-primary peer-checked:text-on-primary shrink-0 transition-colors shadow-sm">
+<span class="material-symbols-outlined text-[14px]">check</span>
+</div>
+<div class="w-14 h-14 rounded-lg overflow-hidden bg-surface-container shrink-0">
+<img alt="Bamboo Anti-Slip Undercap" class="w-full h-full object-cover" data-alt="Editorial minimalist product photo of an oatmeal colored anti-slip breathable bamboo undercap for hijab styling, folded neatly on a textured cream ceramic surface." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZ4of7cGOhjA8114vRNyYDYOSp4QViNZ_I4Lbg32OHspvUsjoRPKm106EVUYwe9_ZawYRivk1gJZ_j68trrmnj-3fHQ4-2Mcurpp4f4NoMtKVA-hjIJOtwCtVsDeiza1ay3NM0JzLP3iN4JTVtTcUuc7HXCGQxG469Ur0aBDorXymv4_c-PUi5LfXGa7VKbD7lMvruLigr21a_wRO3IRpGuUZKy1mIDmG75YNz3wOx"/>
+</div>
+<div class="flex flex-col min-w-0 flex-1">
+<div class="flex items-center gap-1.5">
+<span class="font-label-md text-label-md font-bold text-primary truncate">Bamboo Anti-Slip Undercap</span>
+<span class="px-1.5 py-0.2 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-[9px] font-semibold shrink-0">Cooling</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Oatmeal • Hair-protecting modal</span>
+</div>
+<span class="font-label-md text-label-md font-semibold text-primary shrink-0">+$16</span>
+</label>
+<!-- Add-on 2: Magnetic Hijab Pins -->
+<label class="flex items-center gap-space-sm p-space-sm rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors cursor-pointer">
+<input checked="" class="addon-checkbox sr-only peer" type="checkbox" value="18"/>
+<div class="w-5 h-5 rounded-md bg-surface flex items-center justify-center text-primary peer-checked:bg-primary peer-checked:text-on-primary shrink-0 transition-colors shadow-sm">
+<span class="material-symbols-outlined text-[14px]">check</span>
+</div>
+<div class="w-14 h-14 rounded-lg overflow-hidden bg-surface-container shrink-0">
+<img alt="Brushed Champagne Gold Magnetic Hijab Pins" class="w-full h-full object-cover" data-alt="Macro jewelry photography of a pair of brushed champagne gold rounded magnetic hijab pins resting gracefully on soft woven sand fabric, highlighting luxury matte finish." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBgJM-YGGG2u_WYXQaCRNx-1FBvnq5ew82tCoR1XxWFe_BLsZuFnbsEuBiWPGx4Inmw3PkkAjOJJ3bnABmVKCtX0mVh4ybEW2yNLxZPzFm22dKmpmzdiZQtusLoY7E3WXEIhv-yxGzvM9_BM_g1dBhNbvb84xBF7FjG4jWOnH6-9JDYFt7tEc7cUTtvxKGOdMI4Qub5w9B368NcHAYJevW5DvD5VzL6k60LxvVDELkL"/>
+</div>
+<div class="flex flex-col min-w-0 flex-1">
+<div class="flex items-center gap-1.5">
+<span class="font-label-md text-label-md font-bold text-primary truncate">Champagne Magnetic Pins</span>
+<span class="px-1.5 py-0.2 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-[9px] font-semibold shrink-0">Snag-Free</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Brushed Gold finish • Extra strength hold</span>
+</div>
+<span class="font-label-md text-label-md font-semibold text-primary shrink-0">+$18</span>
+</label>
+<!-- Add-on 3: Full Coverage Slip Dress -->
+<label class="flex items-center gap-space-sm p-space-sm rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors cursor-pointer">
+<input class="addon-checkbox sr-only peer" type="checkbox" value="48"/>
+<div class="w-5 h-5 rounded-md bg-surface flex items-center justify-center text-primary peer-checked:bg-primary peer-checked:text-on-primary shrink-0 transition-colors shadow-sm">
+<span class="material-symbols-outlined text-[14px]">check</span>
+</div>
+<div class="w-14 h-14 rounded-lg overflow-hidden bg-surface-container shrink-0">
+<img alt="Full Coverage Modal Slip Dress" class="w-full h-full object-cover" data-alt="Editorial product shot of an ankle-length nude anti-static modal slip dress on an ivory hanger, designed specifically for modesty under sheer and light-toned summer abayas." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAgWqdJADozccgnfEM2x8lPNYBr187-Qf5k9FaQJ6rQEEw63fqu1AdfCwnEgSRr1TrITCS1qYn046U_Q0Nc5vQ7A68VwydWz73NaUxYnfHyZR74JBnko310y9JtAISJpR5yt5a-JtNed_R9jEnh8iWniOeEAH6_FcGww5TwMak49PN8kbncl3iu-7_PzzIyUCqdmf-ep-1Y5JqY1a1EC403uk7pRazXgNYk96LW0d3m"/>
+</div>
+<div class="flex flex-col min-w-0 flex-1">
+<div class="flex items-center gap-1.5">
+<span class="font-label-md text-label-md font-bold text-primary truncate">Full Coverage Modal Slip</span>
+<span class="px-1.5 py-0.2 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-[9px] font-semibold shrink-0">Anti-Static</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Nude • High neckline, ankle length</span>
+</div>
+<span class="font-label-md text-label-md font-semibold text-primary shrink-0">+$48</span>
+</label>
+</div>
+</section>
+<!-- Hijab Drape Style Guide (Delight Editorial Micro-Stories) -->
+<section class="mt-space-lg px-gutter-mobile flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-sm text-headline-sm text-primary">Drape Style Inspiration</h3>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">How to Wear</span>
+</div>
+<div class="grid grid-cols-3 gap-space-xs">
+<!-- Style 1 -->
+<div class="flex flex-col gap-1.5 p-2 rounded-xl bg-surface-container-low">
+<div class="w-full aspect-[4/5] rounded-lg overflow-hidden bg-surface-container">
+<img alt="Effortless Shoulder Toss drape" class="w-full h-full object-cover" data-alt="Close up portrait of a stylish modest woman demonstrating the effortless shoulder toss hijab drape with chiffon material gently framing cheekbones and draping over one shoulder." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBeArr2I1RsliT4lMyxR7TxXaMpIEsViMItr2GRtL11ILcJStziHg5k2rwwaZQ3CZo01-f9JYwB0QUbBDSQ1qekLKib0HJZIbTU0xFe9-BGynGG8z9dhTiGUURwkusMWXAPUunx7UGjEzEZWIonoBH_rogIbmCyllvI1jawo_EyxQKssKGl0GjmhSCSOqakwsY6quLBVrNzr2BpTP2OcQ0HzI6RLy1I27YSxRGNauki"/>
+</div>
+<span class="font-label-sm text-label-sm font-bold text-primary line-clamp-1">Shoulder Toss</span>
+<span class="font-body-sm text-[11px] text-on-surface-variant leading-tight">Relaxed &amp; airy</span>
+</div>
+<!-- Style 2 -->
+<div class="flex flex-col gap-1.5 p-2 rounded-xl bg-surface-container-low">
+<div class="w-full aspect-[4/5] rounded-lg overflow-hidden bg-surface-container">
+<img alt="Loose Framing Wrap drape" class="w-full h-full object-cover" data-alt="Modern modest fashion portrait showing loose framing wrap hijab drape with soft cascading ripples on chest, pinned invisibly with champagne magnets." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2UX-Epd_VNjhRUPs1bYC5VsIy0flPm7_113FfTW7fzymTOKVz1U69X_rhZt3nDLbw4txnMJ_w4gBwIAp_ERpJ6K1kDexVQkViSjlcA61zFnqcaTp5WhgJrx9gjNHHD3qY5YbQr2uAp5PfFiUfUyB3x79jniX9gnfsnzju1_hH-hWErVz2a_BUcgbfRFU-ja8-qC6FQ_vBg3GararHOtfzcdCsIFNs8hV9IgBgxrHq"/>
+</div>
+<span class="font-label-sm text-label-sm font-bold text-primary line-clamp-1">Loose Framing</span>
+<span class="font-body-sm text-[11px] text-on-surface-variant leading-tight">Flowing chest drape</span>
+</div>
+<!-- Style 3 -->
+<div class="flex flex-col gap-1.5 p-2 rounded-xl bg-surface-container-low">
+<div class="w-full aspect-[4/5] rounded-lg overflow-hidden bg-surface-container">
+<img alt="Classic Tucked Tailored drape" class="w-full h-full object-cover" data-alt="Editorial portrait of modest woman wearing tailored tucked hijab wrap tucked cleanly into an abaya collar for a sleek modern architectural silhouette." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCyeR3loBaeYT_Dq8wm1sjpUp7_zSm-HGFZazkZ9-YCFziHV7uLW9IdktNm2cM1wg9qb66P7PGAQEISodaWZ5X6Qzq5ABs1y_xqaSPIuuzdFoIFwgRWgLbmR0FkeOfQYV7rkAxTvH-GBd5pHiQhs6bVY7avN_mob9nUlu4Kpm4KhCAt9eEgyjU_WbeeE9WiIxkucO8uW2hzP3lmyYmRH0k124K2zy9uzR6E71l0TwWY"/>
+</div>
+<span class="font-label-sm text-label-sm font-bold text-primary line-clamp-1">Tucked Tailored</span>
+<span class="font-body-sm text-[11px] text-on-surface-variant leading-tight">Sleek, secure hold</span>
+</div>
+</div>
+</section>
+<!-- Sticky Bundle Drawer / Floating Quick Action -->
+<div class="fixed bottom-16 left-0 right-0 z-40 px-gutter-mobile py-2.5 bg-surface/95 backdrop-blur-xl shadow-[0_-8px_24px_rgba(42,33,33,0.06)]">
+<div class="max-w-lg mx-auto flex items-center justify-between gap-space-sm">
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-headline-sm text-headline-sm font-bold text-primary" id="total-bundle-price">$216</span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-[10px] font-semibold">Save $20</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate" id="bundle-items-count">3 Curated Studio Pieces</span>
+</div>
+<button class="min-h-[48px] px-space-lg rounded-full bg-primary text-on-primary font-label-lg text-label-lg flex items-center justify-center gap-2 hover:bg-primary-container active:scale-[0.98] transition-all shadow-md shrink-0" id="add-bundle-button" type="button">
+<span id="button-label">Add Look to Bag</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<script>
+  (function initStylingStudio() {
+    const BASE_ABAYA_PRICE = 148;
+    const BUNDLE_DISCOUNT = 20;
+
+    const hijabInputs = document.querySelectorAll('input[name="hijab-choice"]');
+    const addonCheckboxes = document.querySelectorAll('.addon-checkbox');
+    const totalPriceEl = document.getElementById('total-bundle-price');
+    const bundleCountEl = document.getElementById('bundle-items-count');
+    const addBtn = document.getElementById('add-bundle-button');
+    const btnLabel = document.getElementById('button-label');
+    const adviceBtn = document.getElementById('stylist-toggle-btn');
+    const adviceDrawer = document.getElementById('stylist-advice-drawer');
+
+    // Stylist Advice Toggle
+    if (adviceBtn && adviceDrawer) {
+      adviceBtn.addEventListener('click', () => {
+        adviceDrawer.classList.toggle('hidden');
+      });
+    }
+
+    // Dynamic Price Calculation
+    function calculateTotal() {
+      let total = BASE_ABAYA_PRICE;
+      let itemsCount = 1; // Base Abaya
+
+      // Selected Hijab
+      const activeHijab = document.querySelector('input[name="hijab-choice"]:checked');
+      if (activeHijab) {
+        total += parseFloat(activeHijab.value || 0);
+        itemsCount += 1;
+      }
+
+      // Checked Accessories
+      addonCheckboxes.forEach(cb => {
+        if (cb.checked) {
+          total += parseFloat(cb.value || 0);
+          itemsCount += 1;
+        }
+      });
+
+      // Apply Bundle Discount
+      const finalPrice = Math.max(0, total - BUNDLE_DISCOUNT);
+
+      if (totalPriceEl) {
+        totalPriceEl.textContent = '$' + finalPrice;
+      }
+
+      if (bundleCountEl) {
+        bundleCountEl.textContent = itemsCount + ' Curated Studio Pieces';
+      }
+    }
+
+    hijabInputs.forEach(radio => {
+      radio.addEventListener('change', calculateTotal);
+    });
+
+    addonCheckboxes.forEach(cb => {
+      cb.addEventListener('change', calculateTotal);
+    });
+
+    // Add To Bag Delight Feedback
+    if (addBtn && btnLabel) {
+      addBtn.addEventListener('click', () => {
+        const originalText = btnLabel.textContent;
+        btnLabel.textContent = 'Look Added ✓';
+        addBtn.classList.add('bg-secondary', 'text-on-secondary');
+        
+        setTimeout(() => {
+          btnLabel.textContent = originalText;
+          addBtn.classList.remove('bg-secondary', 'text-on-secondary');
+        }, 1800);
+      });
+    }
+
+    // Initial calculation
+    calculateTotal();
+  })();
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-4px_24px_rgba(42,33,33,0.06)]" data-active-classes="text-primary font-semibold [&amp;_span.material-symbols-outlined]:[font-variation-settings:'FILL'_1,'wght'_400,'GRAD'_0,'opsz'_24]"><div class="flex justify-around items-center h-16 px-space-xs max-w-lg mx-auto"><a class="flex-1 flex flex-col items-center justify-center min-h-[44px] py-1 text-on-surface-variant hover:text-primary transition-all duration-200" data-path="home-feed" href="../haya_studio_modern_modest_storefront/code.html"><span class="material-symbols-outlined text-[22px] mb-0.5">home</span><span class="font-label-sm text-[10px] tracking-wider uppercase">Home</span></a><a class="flex-1 flex flex-col items-center justify-center min-h-[44px] py-1 text-on-surface-variant hover:text-primary transition-all duration-200" data-path="catalog" href="../shop/index.html"><span class="material-symbols-outlined text-[22px] mb-0.5">grid_view</span><span class="font-label-sm text-[10px] tracking-wider uppercase">Shop</span></a><a aria-current="page" class="flex-1 flex flex-col items-center justify-center min-h-[44px] py-1 transition-all duration-200 text-primary font-semibold [&amp;_span.material-symbols-outlined]:[font-variation-settings:'FILL'_1,'wght'_400,'GRAD'_0,'opsz'_24]" data-path="complete-the-look" href="code.html"><span class="material-symbols-outlined text-[22px] mb-0.5">styler</span><span class="font-label-sm text-[10px] tracking-wider uppercase">Styling</span></a><a class="flex-1 flex flex-col items-center justify-center min-h-[44px] py-1 text-on-surface-variant hover:text-primary transition-all duration-200" data-path="saved-wishlist" href="../saved/index.html"><span class="material-symbols-outlined text-[22px] mb-0.5">favorite</span><span class="font-label-sm text-[10px] tracking-wider uppercase">Saved</span></a><a class="flex-1 flex flex-col items-center justify-center min-h-[44px] py-1 text-on-surface-variant hover:text-primary transition-all duration-200" data-path="account-settings" href="../account/index.html"><span class="material-symbols-outlined text-[22px] mb-0.5">person</span><span class="font-label-sm text-[10px] tracking-wider uppercase">Account</span></a></div></nav></body></html>
